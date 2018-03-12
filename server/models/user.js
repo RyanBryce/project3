@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt-nodejs');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken')
+const config = require('../../config')
 
 const UserSchema = new Schema({
   email: { type: String, unique: true, lowercase: true },
@@ -26,7 +27,7 @@ UserSchema.methods.generateJWT = function(user) {
   return jwt.sign({
     id: this._id,
     username: this.username,
-  }, "ijiwjid", {
+  }, config.secret, {
     expiresIn: "1w"
   })
 }
