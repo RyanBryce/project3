@@ -1,10 +1,13 @@
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
+import { routerTransition } from '../animations';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss'],
+  animations: [routerTransition],
+  host: {'[@routerTransition]': ''}
 })
 export class RegisterComponent implements OnInit {
 
