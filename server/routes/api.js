@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const post = require('../models/post');
+const config = require('../../config')
 
-const db = "mongodb://admin:password@ds259768.mlab.com:59768/code-tutor";
+const db = config.database;
 
 mongoose.Promise = global.Promise;
 mongoose.connect(db, function(err) {

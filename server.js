@@ -6,6 +6,7 @@ const app = express();
 const userRoutes = require('./server/routes/userApi')
 const cors = require('cors')
 
+const config = require('./config')
 const api = require('./server/routes/api');
 app.use(cors())
 
@@ -28,7 +29,7 @@ app.get('*', (req, res) => {
 });
 
 // Set port
-const port = process.env.PORT || '3000';
+const port = config.port;
 app.set('port', port);
 
 // Create the HTTP Server
