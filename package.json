@@ -9,8 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "ng serve -pc proxy.conf.json --open",
-    "postinstall": "ng build --aot -prod"
+    "dev": "ng serve -pc proxy.conf.json --open"
   },
   "private": true,
   "engines": {
