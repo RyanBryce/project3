@@ -107,8 +107,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(187),
-        styles: [__webpack_require__(179)],
+        template: __webpack_require__(186),
         animations: [__WEBPACK_IMPORTED_MODULE_1__animations__["a" /* routerTransition */]],
         host: { '[@routerTransition]': '' }
     })
@@ -274,8 +273,8 @@ var NavComponent = (function () {
 NavComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* Component */])({
         selector: 'app-nav',
-        template: __webpack_require__(191),
-        styles: [__webpack_require__(183)]
+        template: __webpack_require__(190),
+        styles: [__webpack_require__(182)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object])
 ], NavComponent);
@@ -311,8 +310,8 @@ var RegistrationComponent = (function () {
 RegistrationComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-registration',
-        template: __webpack_require__(194),
-        styles: [__webpack_require__(186)]
+        template: __webpack_require__(193),
+        styles: [__webpack_require__(185)]
     }),
     __metadata("design:paramtypes", [])
 ], RegistrationComponent);
@@ -341,25 +340,7 @@ var environment = {
 /***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 180:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -374,10 +355,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 181:
+/***/ 180:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -392,10 +373,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 182:
+/***/ 181:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -410,10 +391,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 183:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -428,10 +409,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 184:
+/***/ 183:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -446,10 +427,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 185:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -464,10 +445,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 186:
+/***/ 185:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(9)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -482,56 +463,56 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 187:
+/***/ 186:
 /***/ (function(module, exports) {
 
 module.exports = "<app-nav></app-nav>\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
-/***/ 188:
+/***/ 187:
 /***/ (function(module, exports) {
 
 module.exports = "<div *ngIf=\"post\" class=\"body-blur\">\n\n  <div class=\"row\">\n    <div class=\"columns small-12 medium-10\">\n      <a routerLink=\"/\" id=\"back\">Back</a>\n      <h1>{{ post.title }}</h1>\n    </div>\n    <div class=\"columns small-12 medium-2\">\n      <a href=\"{{ post.url }}\" id=\"external-btn\">\n        <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n          viewBox=\"0 0 96.8 96.8\" style=\"enable-background:new 0 0 96.8 96.8;\" xml:space=\"preserve\" style=\"width:100%;height:100%;\">\n          <g id=\"group\">\n            <circle class=\"circle\" cx=\"48.4\" cy=\"48.4\" r=\"48.4\" />\n            <polygon class=\"arrow\" points=\"60.4,25.6 44.2,25.6 33.1,36.2 51.4,36.2 21.7,70.8 36,70.8 60.4,42.3 60.4,63.3 71,50.9 71,36.2 \n            71,25.6 \" />\n          </g>\n        </svg>\n      </a>\n    </div>\n  </div>\n\n  <div class=\"row columns\">\n    <p>{{ post.description }}</p>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
-/***/ 189:
+/***/ 188:
 /***/ (function(module, exports) {
 
 module.exports = "\n<div class=\"row\">\n  <div class=\"columns small-12 medium-6 large-4 posts\" *ngFor=\"let post of posts\">\n    <div class=\"post-container\">\n      <div class=\"row\">\n        <div class=\"columns small-12 large-10\">\n          <a routerLink=\"/details/{{ post._id }}\" class=\"post-title\">{{ post.title }}</a>\n        </div>\n        <div class=\"columns small-12 large-2 show-for-large\">\n          <a href=\"#\" target=\"_blank\" class=\"external\">\n            <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n                viewBox=\"0 0 96.8 96.8\" style=\"enable-background:new 0 0 96.8 96.8;\" xml:space=\"preserve\">\n              <g id=\"group\">\n                <circle class=\"circle\" cx=\"48.4\" cy=\"48.4\" r=\"48.4\"/>\n                <polygon class=\"arrow\" points=\"60.4,25.6 44.2,25.6 33.1,36.2 51.4,36.2 21.7,70.8 36,70.8 60.4,42.3 60.4,63.3 71,50.9 71,36.2 \n                  71,25.6 \"/>\n              </g>\n              </svg>\n          </a>\n        </div>\n      </div>\n      <p>{{ post.description | length: 130 }}</p>\n      <a routerLink=\"/details/{{ post._id }}\" class=\"cta-btn btn2\">More Info</a>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 190:
+/***/ 189:
 /***/ (function(module, exports) {
 
 module.exports = "  <div class=\"body-blur\">\n    <div class=\"row columns\">\n      <h1>Login</h1>\n    </div>\n  \n    <form (ngSubmit)=\"login()\">\n  \n      <div class=\"row columns\">\n        <label>Email\n          <input name=\"Email\" type=\"email\"[(ngModel)]=\"user.email\" class=\"form-control\">\n        </label>\n      </div>\n  \n      <div class=\"row columns\">\n        <label>Password\n          <input name=\"Password\" type=\"password\" [(ngModel)]=\"user.password\"class=\"form-control\">\n        </label>\n        <input type=\"submit\" class=\"cta-btn filled\" value=\"Login\">\n  \n      </div>\n    </form>\n  </div>\n  \n"
 
 /***/ }),
 
-/***/ 191:
+/***/ 190:
 /***/ (function(module, exports) {
 
 module.exports = "\n<div class=\"row header\">\n  <div class=\"columns small-12 medium-3\">\n    <a routerLink=\"/\"><img src=\"/assets/images/logo.svg\" id=\"logo\"></a>\n  </div>\n  <div class=\"columns small-12 medium-9\">\n    <a class=\"cta-btn nav\" (click)=\"postTutorial()\">Post Tutorial</a>\n    <a routerLink=\"register\" class=\"cta-btn nav\">Register</a>\n    <a routerLink=\"login\" class=\"cta-btn nav\">Login</a>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 192:
+/***/ 191:
 /***/ (function(module, exports) {
 
 module.exports = "\n<div class=\"body-blur\">\n  <div class=\"row columns\">\n    <h1>Post a Tutorial</h1>\n  </div>\n\n  <form [formGroup]=\"postForm\" (ngSubmit)=\"addPost(postForm.value)\">\n    <div class=\"row\">\n      <div class=\"columns small-12 medium-6\">\n        <label>Title of Tutorial\n          <input type=\"text\" name=\"title\" [formControl]=\"postForm.controls['title']\">\n        </label>\n        <div class=\"alert\" *ngIf=\"!postForm.controls['title'].valid && postForm.controls['title'].touched\">You must specify a title that's at least 15 characters long.</div>\n      </div>\n      <div class=\"columns small-12 medium-6\">\n        <label>URL\n          <input type=\"text\" name=\"url\" [formControl]=\"postForm.controls['url']\">\n        </label>\n        <div class=\"alert\" *ngIf=\"!postForm.controls['url'].valid && postForm.controls['url'].touched\">You must specify a URL.</div>\n      </div>\n    </div>\n      <div class=\"row columns\">\n        <label>Description\n          <textarea name=\"description\" id=\"description\" [formControl]=\"postForm.controls['description']\"></textarea>\n        </label>\n        <div class=\"alert\" *ngIf=\"!postForm.controls['description'].valid && postForm.controls['description'].touched\">You must specify a description that's at least 500 characters long.</div>\n        <input type=\"submit\" class=\"cta-btn filled\" value=\"Post Tutorial\" [disabled]=\"!postForm.valid\">\n      </div>\n  </form>\n</div>\n\n"
 
 /***/ }),
 
-/***/ 193:
+/***/ 192:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"body-blur\">\n  <div class=\"row columns\">\n    <h1>Register</h1>\n  </div>\n\n  <form (ngSubmit)=\"register()\">\n\n    <div class=\"row columns\">\n      <label>Username\n        <input name=\"UserName\" type=\"text\" [(ngModel)]=\"user.username\" class=\"form-control\">\n      </label>\n    </div>\n\n    <div class=\"row columns\">\n      <label>Email\n        <input name=\"Email\" type=\"email\" [(ngModel)]=\"user.email\" class=\"form-control\">\n      </label>\n    </div>\n\n    <div class=\"row columns\">\n      <label>Password\n        <input name=\"Password\" type=\"password\" [(ngModel)]=\"user.password\" class=\"form-control\">\n      </label>\n      <input type=\"submit\" class=\"cta-btn filled\" value=\"Register\">\n\n    </div>\n  </form>\n</div>\n"
 
 /***/ }),
 
-/***/ 194:
+/***/ 193:
 /***/ (function(module, exports) {
 
 module.exports = "\n<div class=\"row\">\n  <div class=\"columns small-12 medium-6 large-4 posts\">\n    <h1>HEllo world</h1>\n<form> \n  <div class=\"form-group\"><input type=\"text\" class=\"form-control\"></div>\n  <div class=\"form-group\"><input type=\"password\" class=\"form-control\"></div>\n</form>\n</div>\n</div>"
@@ -561,7 +542,7 @@ var routerTransition = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angula
 
 /***/ }),
 
-/***/ 241:
+/***/ 240:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(110);
@@ -619,7 +600,7 @@ AuthService = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -758,8 +739,8 @@ var DetailsComponent = (function () {
 DetailsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-details',
-        template: __webpack_require__(188),
-        styles: [__webpack_require__(180)],
+        template: __webpack_require__(187),
+        styles: [__webpack_require__(179)],
         animations: [__WEBPACK_IMPORTED_MODULE_3__animations__["a" /* routerTransition */]],
         host: { '[@routerTransition]': '' }
     }),
@@ -805,8 +786,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-home',
-        template: __webpack_require__(189),
-        styles: [__webpack_require__(181)],
+        template: __webpack_require__(188),
+        styles: [__webpack_require__(180)],
         animations: [__WEBPACK_IMPORTED_MODULE_2__animations__["a" /* routerTransition */]],
         host: { '[@routerTransition]': '' }
     }),
@@ -866,8 +847,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_14" /* Component */])({
         selector: 'app-login',
-        template: __webpack_require__(190),
-        styles: [__webpack_require__(182)],
+        template: __webpack_require__(189),
+        styles: [__webpack_require__(181)],
         animations: [__WEBPACK_IMPORTED_MODULE_4__animations__["a" /* routerTransition */]],
         host: { '[@routerTransition]': '' }
     }),
@@ -931,8 +912,8 @@ var PostComponent = (function () {
 PostComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-post',
-        template: __webpack_require__(192),
-        styles: [__webpack_require__(184)],
+        template: __webpack_require__(191),
+        styles: [__webpack_require__(183)],
         animations: [__WEBPACK_IMPORTED_MODULE_4__animations__["a" /* routerTransition */]],
         host: { '[@routerTransition]': '' }
     }),
@@ -985,8 +966,8 @@ var RegisterComponent = (function () {
 RegisterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* Component */])({
         selector: 'app-register',
-        template: __webpack_require__(193),
-        styles: [__webpack_require__(185)],
+        template: __webpack_require__(192),
+        styles: [__webpack_require__(184)],
         animations: [__WEBPACK_IMPORTED_MODULE_2__animations__["a" /* routerTransition */]],
         host: { '[@routerTransition]': '' }
     }),
@@ -998,5 +979,5 @@ var _a, _b;
 
 /***/ })
 
-},[241]);
+},[240]);
 //# sourceMappingURL=main.bundle.js.map
