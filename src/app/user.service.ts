@@ -9,14 +9,14 @@ export class UserService {
     let headers = new Headers({ 'Content-Type': 'application/json'});
     let options = new RequestOptions({ headers: headers });
 
-    return this._http.post('http://localhost:3000/api/accounts/signup', JSON.stringify(user), options) 
+    return this._http.post('/api/accounts/signup', JSON.stringify(user), options) 
       .map(result => result.json());
   }
   login(user: any) {
     let headers = new Headers({ 'Content-Type': 'application/json'});
     let options = new RequestOptions({ headers: headers });
 
-    return this._http.post('http://localhost:3000/api/accounts/login', JSON.stringify(user), options) 
+    return this._http.post('/api/accounts/login', JSON.stringify(user), options) 
       .map(result => result.json());
   }
 }
