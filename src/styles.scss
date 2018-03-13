@@ -4,7 +4,7 @@
 
 $bg: #2A3136;
 $text-color: #88949D;
-$accent-color: rgb(228, 0, 0);
+$accent-color: #268EB2;
 
 body, html {
     height:100%;
@@ -29,6 +29,8 @@ a:hover {
     padding: 5px 12px;
     float:right;
     border-radius:5px;
+    margin-left: 5px;
+    
 }
 
 .cta-btn:hover {
