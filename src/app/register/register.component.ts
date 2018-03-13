@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  public user = {}
+  public user = {email: "", password: "", username: ""}
 
   constructor(private userService: UserService, private router: Router) { }
 
