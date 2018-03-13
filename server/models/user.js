@@ -17,8 +17,8 @@ UserSchema.methods.toJSON = function() {
   console.log('hello')
  const user = this
  return{
-   username: user.username,
-   email: user.email,
+  //  username: user.username,
+  //  email: user.email,
    token: user.generateJWT()
  }
 }
@@ -27,6 +27,7 @@ UserSchema.methods.generateJWT = function(user) {
   return jwt.sign({
     id: this._id,
     username: this.username,
+    email: this.email
   }, config.secret, {
     expiresIn: "1w"
   })

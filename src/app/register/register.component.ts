@@ -1,6 +1,7 @@
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +14,7 @@ export class RegisterComponent implements OnInit {
 
   public user = {}
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -21,7 +22,7 @@ export class RegisterComponent implements OnInit {
   register(){
     console.log(this.user)
     this.userService.register(this.user)
-    .subscribe(user=> console.log(user))
+    .subscribe(user=> this.router.navigateByUrl('/'))
   }
 
 }
